@@ -17,8 +17,9 @@ class SiteController extends Controller
      */
     public function behaviors()
     {
+
         return [
-            'access' => [
+            'access2' => [
                 'class' => AccessControl::className(),
                 'only' => ['logout'],
                 'rules' => [
@@ -29,7 +30,7 @@ class SiteController extends Controller
                     ],
                 ],
             ],
-            'verbs' => [
+            'verbs2' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'logout' => ['post'],
